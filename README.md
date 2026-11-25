@@ -32,7 +32,6 @@ Data Science Generalist and Systems Builder working across statistical modeling,
 
 | Repository / Platform | Focus | Technologies |
 | :--- | :--- | :--- |
-| [atunafsi.org](https://atunafsi.org) | Live evidence-based therapy web application | Full-Stack Web Platform |
 | [KABURAKURIA/data-analysis](https://github.com/KABURAKURIA/data-analysis) | 100 analytical notebooks spanning survey psychometrics, OLS/logistic regression, NLP sentiment, topic modeling, and network graphs | Python, Pandas, NLTK, Statsmodels |
 | [KABURAKURIA/all-ml-ai-dl-tasks](https://github.com/KABURAKURIA/all-ml-ai-dl-tasks) | 84 multimodal AI inference notebooks and 126 interactive web applications across Vision, Speech/Audio, and NLP | PyTorch, Transformers, Diffusers, Streamlit, Gradio |
 | [KABURAKURIA/computational-neuroscience](https://github.com/KABURAKURIA/computational-neuroscience) | 27 mathematical modeling notebooks covering Kuramoto oscillators, FitzHugh-Nagumo phase planes, Bayesian inference, and Drift-Diffusion models | Python, NumPy, SciPy, Matplotlib |
@@ -44,4 +43,4 @@ Data Science Generalist and Systems Builder working across statistical modeling,
 
 ## Contact
 
-Email: `alvinkuria369@gmail.com` | Phone: `+254707865934` | Live App: [atunafsi.org](https://atunafsi.org)
+Email: `alvinkuria369@gmail.com` | Phone: `+254707865934` | Hugging Face: [KABURAKURIA](https://huggingface.co/KABURAKURIA)
