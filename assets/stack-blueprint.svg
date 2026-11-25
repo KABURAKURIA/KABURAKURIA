@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 185" width="960" height="185">
+  <defs>
+    <style>
+      .paper { fill: #F7F3E9; }
+      .ink { fill: #1C1B1A; }
+      .wire { stroke: #1C1B1A; stroke-width: 2; fill: none; }
+      .ochre { fill: #E0A100; stroke: #1C1B1A; stroke-width: 2; }
+      .teal { fill: #1D6A74; stroke: #1C1B1A; stroke-width: 2; }
+      .vermilion { fill: #D94E28; stroke: #1C1B1A; stroke-width: 2; }
+      .olive { fill: #6D7B3C; stroke: #1C1B1A; stroke-width: 2; }
+      .tag { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 1px; fill: #1C1B1A; text-anchor: middle; }
+      .beam { transform-origin: 480px 30px; animation: balance 5.2s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate; }
+      .subbeam { transform-origin: 730px 62px; animation: subbalance 3.4s steps(5, end) infinite alternate; }
+      @keyframes balance { 0% { transform: rotate(-3.2deg); } 100% { transform: rotate(3.2deg); } }
+      @keyframes subbalance { 0% { transform: rotate(4deg); } 100% { transform: rotate(-4deg); } }
+    </style>
+  </defs>
+
+  <rect x="2" y="2" width="956" height="181" class="paper" stroke="#1C1B1A" stroke-width="2" />
+  <line x1="480" y1="2" x2="480" y2="30" class="wire" />
+  <polygon points="472,30 488,30 480,18" class="ink" />
+
+  <g class="beam">
+    <line x1="150" y1="42" x2="730" y2="62" class="wire" />
+    <line x1="150" y1="42" x2="150" y2="86" class="wire" />
+    <circle cx="150" cy="112" r="28" class="vermilion" />
+    <text x="150" y="158" class="tag">ML / DL INFERENCE</text>
+
+    <line x1="360" y1="49" x2="360" y2="84" class="wire" />
+    <polygon points="360,72 396,132 324,132" class="ochre" />
+    <text x="360" y="158" class="tag">NLP &amp; PSYCHOMETRICS</text>
+
+    <line x1="560" y1="56" x2="560" y2="86" class="wire" />
+    <rect x="530" y="84" width="60" height="44" class="teal" />
+    <text x="560" y="158" class="tag">FULL-STACK &amp; SQL</text>
+
+    <g class="subbeam">
+      <line x1="730" y1="62" x2="730" y2="80" class="wire" />
+      <line x1="684" y1="80" x2="844" y2="90" class="wire" />
+      <line x1="684" y1="80" x2="684" y2="104" class="wire" />
+      <circle cx="684" cy="116" r="14" class="olive" />
+      <line x1="844" y1="90" x2="844" y2="106" class="wire" />
+      <polygon points="844,96 866,118 844,140 822,118" class="ochre" />
+    </g>
+    <text x="775" y="158" class="tag">MOBILE &amp; INTERACTIVE APPS</text>
+  </g>
+</svg>

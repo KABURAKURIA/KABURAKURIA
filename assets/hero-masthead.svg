@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 250" width="960" height="250">
+  <defs>
+    <style>
+      .paper { fill: #F7F3E9; }
+      .ink { fill: #1C1B1A; }
+      .ink-stroke { stroke: #1C1B1A; fill: none; }
+      .grid { stroke: #DFD7C3; stroke-width: 1; }
+      .shadow { fill: #E3DAC3; }
+      .ochre { fill: #E0A100; }
+      .vermilion { fill: #D94E28; }
+      .teal { fill: #1D6A74; }
+      .olive { fill: #6D7B3C; }
+      .title { font-family: Georgia, "Times New Roman", serif; font-size: 38px; font-weight: 700; letter-spacing: 2px; fill: #1C1B1A; }
+      .subtitle { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 2.2px; fill: #1D6A74; }
+      .stack { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 11.5px; font-weight: 600; letter-spacing: 1px; fill: #4A463F; }
+      .meta { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 11px; fill: #5E594F; }
+
+      .tilt-plane {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: rockStep 4.8s steps(6, end) infinite alternate;
+      }
+      .dart-move {
+        animation: dartSlide 3.6s cubic-bezier(0.25, 0.9, 0.3, 1) infinite alternate;
+      }
+      .sun-spin {
+        transform-box: fill-box;
+        transform-origin: center bottom;
+        animation: sunBob 4.2s steps(5, end) infinite alternate;
+      }
+      .bar1 { transform-box: fill-box; transform-origin: bottom center; animation: eqBar 1.8s steps(4, end) infinite alternate; }
+      .bar2 { transform-box: fill-box; transform-origin: bottom center; animation: eqBar 1.8s steps(4, end) 0.45s infinite alternate; }
+      .bar3 { transform-box: fill-box; transform-origin: bottom center; animation: eqBar 1.8s steps(4, end) 0.9s infinite alternate; }
+      .bar4 { transform-box: fill-box; transform-origin: bottom center; animation: eqBar 1.8s steps(4, end) 1.35s infinite alternate; }
+
+      @keyframes rockStep {
+        0% { transform: rotate(-6deg) translateY(0px); }
+        100% { transform: rotate(5deg) translateY(-6px); }
+      }
+      @keyframes dartSlide {
+        0% { transform: translateX(0px); }
+        50% { transform: translateX(46px); }
+        100% { transform: translateX(12px); }
+      }
+      @keyframes sunBob {
+        0% { transform: scaleY(0.92) rotate(-3deg); }
+        100% { transform: scaleY(1.06) rotate(4deg); }
+      }
+      @keyframes eqBar {
+        0% { transform: scaleY(0.45); }
+        100% { transform: scaleY(1.15); }
+      }
+    </style>
+  </defs>
+
+  <rect x="2" y="2" width="956" height="246" class="paper" stroke="#1C1B1A" stroke-width="2.5" />
+
+  <line x1="295" y1="2" x2="295" y2="248" class="grid" />
+  <line x1="2" y1="54" x2="958" y2="54" class="grid" />
+  <line x1="2" y1="196" x2="958" y2="196" class="grid" />
+
+  <polygon points="36,216 258,216 232,196 58,196" class="shadow" />
+  <path d="M 62 196 A 76 76 0 0 1 214 196 Z" class="ochre sun-spin" stroke="#1C1B1A" stroke-width="2" />
+  <polygon points="108,162 238,94 252,182 96,192" class="teal tilt-plane" stroke="#1C1B1A" stroke-width="2" opacity="0.95" />
+  <g class="dart-move">
+    <polygon points="44,82 142,66 116,102" class="vermilion" stroke="#1C1B1A" stroke-width="2" />
+    <circle cx="152" cy="70" r="9" class="ink" />
+  </g>
+  <line x1="26" y1="196" x2="274" y2="196" class="ink-stroke" stroke-width="2.5" />
+  <rect x="44" y="182" width="22" height="14" class="olive" stroke="#1C1B1A" stroke-width="1.8" />
+
+  <text x="332" y="37" class="subtitle">DATA SCIENCE GENERALIST  |  ANALYTICS &amp; APPLIED MACHINE LEARNING</text>
+  <text x="330" y="108" class="title">KABURA KURIA</text>
+  <rect x="332" y="122" width="84" height="5" class="vermilion" />
+  <rect x="422" y="122" width="42" height="5" class="ochre" />
+  <rect x="470" y="122" width="128" height="5" class="teal" />
+
+  <text x="332" y="156" class="stack">PYTHON · SQL · PYTORCH · TENSORFLOW · NEXT.JS · TYPESCRIPT · SUPABASE · FLUTTER</text>
+  <text x="332" y="180" class="meta">Statistical Modeling, NLP, Computer Vision, Full-Stack Web &amp; Cross-Platform Systems</text>
+
+  <g transform="translate(828, 70)">
+    <rect x="0" y="12" width="12" height="36" class="teal bar1" stroke="#1C1B1A" stroke-width="1.6" />
+    <rect x="20" y="12" width="12" height="36" class="ochre bar2" stroke="#1C1B1A" stroke-width="1.6" />
+    <rect x="40" y="12" width="12" height="36" class="vermilion bar3" stroke="#1C1B1A" stroke-width="1.6" />
+    <rect x="60" y="12" width="12" height="36" class="olive bar4" stroke="#1C1B1A" stroke-width="1.6" />
+  </g>
+
+  <text x="332" y="224" class="meta">alvinkuria369@gmail.com   ·   +254707865934   ·   atunafsi.org   ·   huggingface.co/KABURAKURIA</text>
+</svg>

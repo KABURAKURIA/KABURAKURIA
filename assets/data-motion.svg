@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 210" width="960" height="210">
+  <defs>
+    <style>
+      .paper { fill: #F7F3E9; }
+      .shadow { fill: #E3DAC3; }
+      .ink { fill: #1C1B1A; }
+      .stroke { stroke: #1C1B1A; stroke-width: 2; fill: none; }
+      .ochre { fill: #E0A100; stroke: #1C1B1A; stroke-width: 2; }
+      .teal { fill: #1D6A74; stroke: #1C1B1A; stroke-width: 2; }
+      .vermilion { fill: #D94E28; stroke: #1C1B1A; stroke-width: 2; }
+      .olive { fill: #6D7B3C; stroke: #1C1B1A; stroke-width: 2; }
+      .lbl { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 1.4px; fill: #1C1B1A; text-anchor: middle; }
+      .sub { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 10px; fill: #4A463F; text-anchor: middle; }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 7s steps(12, end) infinite; }
+      .courier { animation: shuttle 4.4s steps(8, end) infinite; }
+      .bob { animation: lift 2.4s steps(4, end) infinite alternate; }
+      @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+      @keyframes shuttle { 0% { transform: translateX(0px); } 100% { transform: translateX(656px); } }
+      @keyframes lift { 0% { transform: translateY(3px); } 100% { transform: translateY(-5px); } }
+    </style>
+  </defs>
+
+  <rect x="2" y="2" width="956" height="206" class="paper" stroke="#1C1B1A" stroke-width="2" />
+  <line x1="72" y1="98" x2="888" y2="98" class="stroke" stroke-dasharray="8 6" />
+  <line x1="24" y1="162" x2="936" y2="162" stroke="#D5CCB6" stroke-width="1" />
+
+  <g class="courier">
+    <rect x="138" y="90" width="16" height="16" class="vermilion" transform="rotate(45 146 98)" />
+  </g>
+
+  <g transform="translate(140, 98)">
+    <polygon points="-38,34 44,34 34,46 -28,46" class="shadow" />
+    <rect x="-34" y="-34" width="68" height="68" class="ochre bob" />
+    <circle cx="0" cy="0" r="14" class="paper" stroke="#1C1B1A" stroke-width="2" />
+    <circle cx="0" cy="0" r="5" class="ink" />
+    <text x="0" y="56" class="lbl">INGESTION &amp; STATS</text>
+    <text x="0" y="73" class="sub">SQL, Pandas, Polars, SciPy</text>
+  </g>
+
+  <g transform="translate(366, 98)">
+    <polygon points="-42,34 42,34 32,46 -32,46" class="shadow" />
+    <g class="wheel">
+      <polygon points="0,-38 38,0 0,38 -38,0" class="teal" />
+      <rect x="-15" y="-15" width="30" height="30" class="paper" stroke="#1C1B1A" stroke-width="2" />
+    </g>
+    <circle cx="0" cy="0" r="7" class="vermilion" />
+    <text x="0" y="56" class="lbl">ML, DL &amp; ALIGNMENT</text>
+    <text x="0" y="73" class="sub">PyTorch, Keras, LoRA/DPO, CV</text>
+  </g>
+
+  <g transform="translate(592, 98)">
+    <polygon points="-40,34 40,34 30,46 -30,46" class="shadow" />
+    <polygon points="-38,28 0,-38 38,28" class="vermilion bob" />
+    <circle cx="0" cy="6" r="10" class="ochre" />
+    <text x="0" y="56" class="lbl">FULL-STACK SYSTEMS</text>
+    <text x="0" y="73" class="sub">Next.js, React, TS, Supabase</text>
+  </g>
+
+  <g transform="translate(818, 98)">
+    <polygon points="-40,34 40,34 30,46 -30,46" class="shadow" />
+    <rect x="-36" y="-26" width="72" height="52" rx="0" class="olive bob" />
+    <polygon points="-20,-10 22,-10 0,16" class="ochre" />
+    <text x="0" y="56" class="lbl">CLIENT APPLICATIONS</text>
+    <text x="0" y="73" class="sub">Flutter, Dart, Streamlit, Gradio</text>
+  </g>
+</svg>
